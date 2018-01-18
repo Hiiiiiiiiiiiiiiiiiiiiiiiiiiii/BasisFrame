@@ -177,7 +177,7 @@ SSM框架搭建
 -
 1. 添加mven依赖
 2. 新建 applicationContext.xml 配置文件
-    1. 添加自动扫描(service)
+    1. 添加自动扫描(controller)
     2. 加载 properties 文件
     3. 数据库连接池
     4. 添加事务管理器
