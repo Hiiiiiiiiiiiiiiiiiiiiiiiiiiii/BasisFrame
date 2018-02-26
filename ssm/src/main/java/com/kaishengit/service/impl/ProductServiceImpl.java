@@ -16,4 +16,9 @@ public class ProductServiceImpl implements ProductService {
     public List<Product> findAll() {
         return productMapper.selectByExample(new ProductExample());
     }
+
+    @Override
+    public Product findById(int number) {
+        return productMapper.selectByPrimaryKey(number);
+    }
 }

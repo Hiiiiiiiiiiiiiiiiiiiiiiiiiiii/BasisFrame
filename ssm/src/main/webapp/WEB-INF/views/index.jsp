@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +9,17 @@
     <title>Document</title>
 </head>
 <body>
-    hello
+    <form action="/get" method="post">
+        <input name="number" type="text">
+        <button>点击查询</button>
+    </form>
+    <div>
+        <c:if test="${product==null}">
+            无
+        </c:if>
+        ${product.productName}
+        ${product.price}
+        ${product.marketPrice}
+    </div>
 </body>
 </html>
